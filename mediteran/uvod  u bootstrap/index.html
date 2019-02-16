@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>NIkola Pajevic</title>
+		<meta name="author" content="Nikola Pajevic">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+		<link rel="stylesheet" href="css/stil.css"
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Uvod u Bootstrap</h3>
+					
+					<p style="font-size: 22px">Nikola Pajevic </p>
+					<p style="font-size: 18px">www.pajevic.info </p>
+				</section>
+				<!--
+				<section>Sadržaj <hr>
+					
+						<ul style = "font-size: 22px; float: left;">
+							<li>Uvod u HTML</li>
+							<li>Kreiranje stranice</li>
+							<li>Komentari</li>
+							<li>Paragrafi</li>
+							<li>Novi red</li>
+							<li>Tag pre</li>
+							<li>Naslovi</li>
+							<li>Naglasavanje teksta</li>
+							<li>Linija</li>
+							<li>Navodnici</li>
+							<li>Linkovanje</li>
+							<li>Liste</li>
+							<li>Divovi</li>
+							<li>Farbanje teksta</li>
+							<li>Slike</li>
+							<li>Tabele</li>
+						</ul>
+					</p>
+				</section>
+				-->
+				<section>Šta je bootstrap<hr>
+					<p  style = "font-size: 22px; text-align: justify;">
+						Bootstrap je open-source JavaScript framework, odnosno kombinacija HTML-a, CSS-a i JavaScript‐a, razvijen sa ciljem da omogući i olakša razvoj web formi (interface-a,tj . layout-a) kao i razvoj naprednih web komponenti.Zato ga sa te strane možemo zvati Front‐End‐Framework.
+					</p>
+				</section>
+				<section> Responsive <hr>
+					<p style = "font-size: 22px; text-align: justify;">
+<pre style="width: auto;">
+<xmp>
+<!--
+<meta  name="viewport"  content="width=device-­width, initial-­scale=1"> 
+--> 
+</xmp>
+</pre>
+					</p>
+					
+				</section>
+				<section>Kontejneri<hr>	
+				<p  style = "font-size: 22px; text-align: justify;">
+						Postoje dvije vrste kontejnera: container i container-fluid.
+					</p>		
+
+	</section>
+	<section>Uvoz bootstrap-a<hr>
+	<pre style="width: auto;">
+    <xmp style="width: 80%"><!-- 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js "></script>
+--></xmp>
+	</pre>
+	</section>
+				
+	<section>Podesavanje kontejnera<hr>
+	<pre style="width: auto;">
+<xmp><!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+	Bootstrap 4 Example
+</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<h1>
+	My First Bootstrap Page
+	</h1>
+<p>
+This is some text.
+</p>
+</div>
+</body>
+</html>
+
+--></xmp>
+	</pre>
+	</section>
+	<section>Grid klase<hr>
+	<pre style="width: auto;">
+ <xmp>
+<!-- 
+ .col-(extra small devices - screen width less than 576px)
+.col-sm-(small devices - screen width equal to or greater than 576px)
+.col-md-(medium devices - screen width equal to or greater than 768px)
+.col-lg-(large devices -screen width equal to or greater than 992px)
+.col-xl-(xlarge devices ‐screen width equal to or greater than 1200px)
+
+--></xmp>
+	</pre>
+    </p>
+	</section>
+<section>Osnovna struktura<hr>
+	<pre style="width: auto;">
+	<xmp>
+<!--
+<div class="row">
+<div class="col‐*-*"></div>
+<div class="col‐*-*"></div>
+</div>
+<div class="row">
+<div class="col‐*‐*"></div>
+<div class="col‐*‐*"></div>
+<div class="col-*-*"></div>
+</div>
+
+-->
+	</xmp>
+	</pre>
+	</p>
+
+</section>
+<section>Bootstrap slike <hr>
+	<p>
+	<pre style="width: auto;">
+	<xmp>
+<!--
+<img  class="img­‐fluid"  src="img_chania.jpg"  alt="Chania"> -­ klasa  za  responsive  slike
+<img  src="cinqueterre.jpg"  class="rounded"  alt="Cinque  Terre">  -­ klasa  za  zaobljene  ivice  slike
+-->
+	</xmp>
+	</pre>
+	</p>
+
+</section>
+<section>Alert links<hr>
+	<pre style="width: auto;">
+	<xmp>
+<!--
+• Success! You s hou ld read t his m es s age. 
+• Info! You s hou ld read t his m es s age. 
+• Warning! You s hou ld read t his m es s age. 
+• Danger! You s hou ld read t his m es s age. 
+• Primary! You s hou ld read t his m es s age. 
+• Secondary! You s hou ld read t his m es s age. 
+• Dark! You s hou ld read t his m es s age. 
+
+<div class="alert alert‐success">
+<strong>Success!</strong> You should <a href="#" class="alert‐link">read this message</a>.
+</div>
+
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Dugmad<hr>
+<pre style="width: auto;">
+<xmp>
+<!--
+<button type="button" class="btn"> Basic </button>
+<button type="button" class="btn btn‐primary"> Primary </button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn - warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-link">Link</button>
+
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Navigacija<hr>
+	<pre style="width: auto;">
+	<xmp>
+<!--
+<nav class="navbar navbar-expand-sm bg-light”>
+<!‐- Links -‐>
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#">Link 1</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link 2</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link 3</a>
+</li>
+</ul>
+</nav>
+
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Forme<hr>
+	<pre style="width: auto;">
+	<xmp>
+<!--
+<form action="/action_page.php">
+<div class="form-group">
+<label for="email">Email address:</label>
+<input type="email" class="form-control" id="email">
+</div>
+<div class="form-group">
+<label for="pwd">Password:</label>
+<input type="password" class="form-control" id="pwd">
+</div>
+<div class="form-group form-check">
+<label class="form-check-label">
+<input class="form-check-input" type="checkbox"> Remember me
+</label>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form> 
+  
+-->
+	</xmp>
+	</pre>
+</section>
+	
+		</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

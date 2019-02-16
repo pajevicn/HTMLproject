@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>NIkola Pajevic</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/stil.css"
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Pojam i opis algoritma<br>
+					<p style="font-size: 14px">Nikola Pajevic </p>
+				</section>
+
+				<section>Primjer algoritma - Problem kuvanje kafe <hr>
+					<p style = "font-size: 22px">Rjesenje problema <br>
+						<ul style = "font-size: 22px">
+							<li>Sipati vodu u lonce za kafu.</li>
+							<li>Staviti lonce na ringlu.</li>
+							<li>Ukljuciti ringlu.</li>
+							<li>Sacekati nekoliko minuta dok voda ne prokljuca.</li>
+							<li>Sipati kasicicu kafe u vrucu vodu i promijesati.</li>
+							<li>Sačekati nekoliko sekundi dok nivo vode ne počne da raste.</li>
+							<li>Skloniti lonče sa ringle.</li>
+							<li>Isključiti ringlu.</li>
+							<li>Sipati kafu iz lončeta u šoljicu.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Primjer algoritma – Problem:Odlazak u školu <hr>
+					<p style = "font-size: 22px">Rjesenje problema <br>
+						<ul style = "font-size: 22px">
+							<li>Buđenje i ustajanje.</li>
+							<li>Umivanje.</li>
+							<li>Oblacenje.</li>
+							<li>Dorucak.</li>
+							<li>Izlazak iz kuce.</li>
+							<li>Put do skole.</li>
+							<li>Ulazak u skolu.</li>
+							<li>Odlazak do ucionice i mjesta u klupi.</li>
+							<li>Pripremanje sveske i udžbenika iz torbe za prvi čas.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Pojam i opis algoritma <hr>
+					
+						<ul style = "font-size: 22px">
+							<li>Osnova.</li>
+							<li>Rješavanje problema primjenom računara.</li>
+							<li>Algoritam.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Pojam i opis algoritma <hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>Da bi se riješio problem pomoću računara neophodno je
+								da se računaru zada potpuni skup instrukcija u kome su precizno zadati svi koraci.</li>
+							<li>Način na koji čovjek rješava problem sa računarom je isti kao i kada rješava problem bez računara.</li>
+							<li>Razlika je u: - brzini - tačnosti - raznovrsnosti</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Rješavanje problema primjenom računara<hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>Izbor i formulacija problema</li>
+							<li>Analiza problema</li>
+							<li>Izbor postupaka za rješavanje problema</li>
+							<li>Projektovanje programa</li>
+							<li>Pisanje programa u odgovarajućem programskom jeziku</li>
+							<li>Testiranje programa</li>
+							<li>Izrada dokumentacije</li>
+							<li>Održavanje programa</li>
+						</ul>
+					</p>
+				</section>
+				<section>Izbor i formulacija problema<hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>Postoje prosti i složeni problemi.</li>
+							<li>Prije svega treba razmotriti da li za problem koji se rješava treba koristiti računar</li>
+							<li>Međutim sa složene probleme treba koristiti računar.</li>
+							<li>Primjenom računara mogu se riješiti samo problemi koji su precizno definisani, ne može se očekivati da računar izvede postupak koji ne bi mogao da izvede čovjek.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Analiza problema<hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>Problem koji je zadat obično nije zadat u takvom obliku da se može odmah prenijeti u računar.</li>
+							<li>Na osnovu problema treba ustanoviti: koji su podaci zadani, šta treba da se izračuna kao rezultat, kao i da li je moguće na osnovu zadanih podatak moguće dobiti traženi rezultat.</li>
+							<li>Analizom se utvrđuje šta je sve obuhvaćeno rješavanjem problema.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Izbor postupka za rješavanje problema<hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>U ovoj fazi se na osnovu zadatih početnih podataka i traženih rezultata određuje način na koji se od početnih podataka dolazi do rješenja.</li>
+							<li>Treba izabrati pravi način da se dođe do rješenja.</li>
+							<li>Primjena što manje operacija radi uštede vremena, kapaciteta i opterećenja računara kao i veće tačnosti rezultata</li>
+							<li>Pogrešan izbor postupaka može da dovede do velikih promašaja koji se manifestuju: pogrešnim rezultatima, dužina rada ...</li>
+						</ul>
+					</p>
+				</section>
+
+
+				<section>Projektovanje programa<hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>Prije početka pisanja programa neophodno je izvršiti sistematsku analizu postavljenih zahtjeva i na osnovu toga izvršiti projektovanje cjelokupne strukture programa.</li>
+							<li>Najuspješniji postupak projektovanja programa je odozgo- nadolje</li>
+							<li>Primjena što manje operacija radi uštede vremena, kapaciteta i opterećenja računara kao i veće tačnosti rezultata</li>
+							<li>Ovim pristupom programer razmatra cio problem kao najviši nivo i dijeli ga na logičke cjeline.</li>
+							<li>Svaka cjelina se pojedinačno razmatra.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Projektovanje programa<hr>
+					
+					<img src="http://pajevic.info/AIP/prezentacija/slike/slika.jpg">
+					</p>
+				</section>
+
+				<section>Pisanje programa<hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>Kada je postupak za rješavanje problema odredjen, pristupa se njegovom programiranju.</li>
+							<li>Kada ste nacrtali algoritam, prevođenje algoritamskog opisa je relativno lako ali ipak mora da se izvede sa velikom pažnjom.</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Testiranje programa<hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>Pola ukupnog vremena programer utroši na ispravljanje i testiranje programa. </li>
+							<li>Testiranje je bitan dio programiranja.</li>
+							<li>Njemu treba pristupiti pozitivno i pokušati da se otkriju sve skrivene greške.</li>
+							<li>Zadavanjem odredjenih testova dolazi do otkrivanja grešaka u napisanom programu.</li>
+						</ul>
+					</p>
+				</section>
+
+					<section>Izrada dokumentacije i održavanje programa<hr>
+					
+						<ul  text-align: "justify", style = "font-size: 22px">
+							<li>Kada je programa napravljen i prošao sve neophodne testove za isti treba napraviti dokumentaciju.</li>
+							<li>Dokumentacija opisuje: šta program radi, kako se koristi, kako se modifikuje, ko su autori ...</li>
+							<li>U slučaju da se kasnije pojavi greška u programu neophodno je napraviti određene izmjene u samom kodu,
+								pravljenje odredjenih izmjena i proširivanje progama naziva se održavanje programa. </li>
+						</ul>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

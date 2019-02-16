@@ -1,0 +1,536 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>NIkola Pajevic</title>
+		<meta name="author" content="Nikola Pajevic">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+		<link rel="stylesheet" href="css/stil.css"
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Uvod u HTML</h3>
+					
+					<p style="font-size: 22px">Nikola Pajevic </p>
+					<p style="font-size: 18px">www.pajevic.info </p>
+				</section>
+
+				<section>Sadržaj <hr>
+					
+						<ul style = "font-size: 22px; float: left;">
+							<li>Uvod u HTML</li>
+							<li>Kreiranje stranice</li>
+							<li>Komentari</li>
+							<li>Paragrafi</li>
+							<li>Novi red</li>
+							<li>Tag pre</li>
+							<li>Naslovi</li>
+							<li>Naglasavanje teksta</li>
+							<li>Linija</li>
+							<li>Navodnici</li>
+							<li>Linkovanje</li>
+							<li>Liste</li>
+							<li>Divovi</li>
+							<li>Farbanje teksta</li>
+							<li>Slike</li>
+							<li>Tabele</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>Uvod u HTML<hr>
+					<p  style = "font-size: 22px; text-align: justify;">
+						HTML dolazi od engleskih riječi HyperText Markup Language. Hypertext je dio teksta koji ima ulogu veze (linka), a Markup Language označava način unosa izgleda informacija unutar dokumenta.<br><br>
+						Svaka web stranica se snima sa ekstenzijom .html. Početna strana se snima kao index.html.
+						Za pisanje web stranica koristiti sublime, notepad ++ ili neki sličan editor.
+					</p>
+				</section>
+				<section> Kreiranje stranice <hr>
+					<p style = "font-size: 22px; text-align: justify;">
+						Postoje neki osnovni HTML tagovi koje bi trebalo dodati svakoj Web stranici koja se kreira.  <br>
+						Svaki html tag se piše u okviru "< >" <br>
+						Završni  tag  se  piše  pomoću  kose  crte  / <br>
+					</p>
+					
+				</section>
+				<section>Kreiranje stranice<hr>	
+				<pre>
+					<br>
+<xmp><!--
+<!DOCTYPE html>
+<head>
+	U headeru se nalaze informacije o sajtu, 
+	kao I što je moguće učitavanje skripti 
+</head>
+<body>
+	U ovom dijelu su definisani svi sadržaji stranice. 
+	Slike, tabele, linkovi, forme, meni,...
+</body>
+</html>
+--></xmp>
+				</pre>
+
+	</section>
+	<section>Kreiranje stranice<hr>
+	<pre>
+    <xmp><!-- 
+<!DOCTYPE html>
+<head>
+	<title>Ovdje stavljamo naslov za sajt</title>
+</head>
+<body>
+	U ovom dijelu su definisani svi sadržaji stranice. 
+	Slike, tabele, linkovi, forme, meni,...
+</body>
+</html>
+--></xmp>
+	</pre>
+	</section>
+				
+	<section>Kreiranje stranice<hr>
+	<pre>
+<xmp><!-- 
+<!DOCTYPE html>
+<head>
+	<title>Ovdje stavljamo naslov za sajt</title>
+</head>
+<body>
+	<! - - ovako se postavlja komentar i 
+	zavrsava se sa - - > . Spojene su crte.
+</body>
+</html>
+--></xmp>
+	</pre>
+	</section>
+	<section>Paragrafi<hr>
+	<p style = "font-size: 22px; text-align: justify;"> Web pretrazivaci obicno ignorisu pritisak na taster ENTER prilikom kucanja u tekst editoru ili tekst procesoru. Korisnik mora da koristite oznaku ili tag da bi odredio gdje zeli da svaki novi paragraph ili pasus pocne.</p>
+	<pre>
+ <xmp>
+<!-- 
+   <p> Ovo je paragraf.</p>
+--></xmp>
+	</pre>
+    </p>
+	</section>
+<section>Paragrafi<hr>
+	<pre>
+	<xmp>
+<!--
+<!DOCTYPE  html>
+<head>	
+	<title>Ucimo paragrafe</title>
+</head>
+<body>	
+	<p> Ovo je prvi paragraf.</p>	
+	<p> Ovo je drugi paragraf.</p>
+</body>
+</html>
+-->
+	</xmp>
+	</pre>
+	</p>
+
+</section>
+<section>Poravnanje paragrafa<hr>
+	<p>
+	<pre>
+	<xmp>
+<!--
+<!DOCTYPE  html>
+<head>	
+	<title>Ucimo paragrafe</title>
+</head>
+<body>
+	<p align="left"> Ovo je prvi paragraf.</p>	
+	<p align="right"> Ovo je drugi paragraf.</p>	
+	<p align="center"> Ovo je treci paragarf.</p>	
+	<p align="justify"> Ovo je cetvrti paragraf.</p>
+</body>
+</html>
+-->
+	</xmp>
+	</pre>
+	</p>
+
+</section>
+<section>Prebacivanje u novi red<hr>
+	<pre>
+	<xmp>
+<!--
+<!DOCTYPE  html>
+<head>
+	<title> Prebacivanje u novi red</title>
+</head>
+<body>	
+	<p>Ako je ovo jedan paragraf, da bi prebacili u novi red mi 
+	samo postavimo tag i on nama tekst prebacuje u novi red.</p>
+</body>
+</html>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Prebacivanje u novi red<hr>
+<pre>
+<xmp>
+<!--
+<!DOCTYPE  html>
+<head>	
+	<title>Tag pre</title>
+</head>
+<body>	
+	<p>Tag PRE sluzi da nam ocita tekst bas onako kako 
+	smo ga napisali</p>	
+	<pre>				
+	Ako smo  odvojili ovako prilikom kucanja onda ce 
+	nam se i ovako prikazati.
+	</pre>
+</body>
+</html>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Naslovi<hr>
+	<pre>
+	<xmp>
+<!--
+<body>
+	<p>Ovdje cemo pokazati kako se postavljaju naslovi
+	i koje velicine za naslove postoje.</p>
+	<h1>Naslov 1. nivoa.</h1>	
+	<h2>Naslov 2. nivoa.</h2>	
+	<h3>Naslov 3. nivoa.</h3>	
+	<h4>Naslov 4. nivoa.</h4>	
+	<h5>Naslov 5. nivoa.</h5>
+	<h6>Naslov 6. nivoa.</h6>
+</body>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Poravnanje naslova<hr>
+	<pre>
+	<xmp>
+<!--
+<body>	
+	<p>Ovdje cemo pokazati kako se postavljaju naslovi i 
+	koje velicine za naslove postoje.</p>
+	<h1 align="left">Naslov 1. nivoa.</h1>	
+	<h2 align="right">Naslov 2. nivoa.</h2>
+	<h3 align="center">Naslov 3. nivoa.</h3>	
+	<h4 align="justify">Naslov 4. nivoa.</h4>	
+	<h5>Naslov 5. nivoa.</h5>	
+	<h6>Naslov 6. nivoa.</h6>
+</body>   
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Naglasavanje teksta<hr>
+	<pre>
+	<xmp>	
+<!--
+<body>	
+<p><b>Za boldiran tekst koristimo ovu opciju b </b></p>	
+<p><i>Tekst da bude nakonsen </i></p>	
+<p><u>Podvucen tekst onda koristimo u </u></p>
+<p><strike>Tekst bude precrtan onda koristimo strike.</strike></p>
+<p><b><i>Dvije ili vise opcije da napravimo .</i></b> </p>
+</body>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Linija<hr>
+	<p>
+	<pre>
+	<xmp>
+<!--
+<!DOCTYPE html>
+<head>	
+	<title>Linkovanje i horizontalna linija</title>
+</head>
+<body>	
+	<p>AKo zelimo da postavimo horiznotalnu liniju onda 
+	na kraju napisemo hr. </p><hr>	
+</body>
+</html>
+-->
+	</xmp>
+	</pre>
+	</p>
+
+</section>
+<section>Navodnici<hr>
+	<pre>
+	<xmp>
+<!--
+<!DOCTYPE html>
+<body>
+	<p>Postavljanje navodnika u tekstu.</p>
+	<p>Da bi nesto naglasili postavimo <q>ovako navodnike 
+	kao sto je prikazano. </q></p>
+</body>
+</html>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Linkovanje<hr>
+	<pre>
+	<xmp>
+<!--
+<!DOCTYPE html>
+<head>		
+	<title>Linkovanje</title>
+</head>
+<body>	
+<p>Ovo je opcija pomocu koje mozemo da povezemo odredjeni 
+dio sajta sa nekim linkom.</p>
+<a href="http://www.pajevic.info">Klikni ovdje da vidis sajt.</a>
+</body>
+</html>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Liste<hr>
+	<pre>
+	<xmp>
+<!--
+<body>
+	<ul>		
+ 	  <li>Prva godina</li>	
+	  <li>Druga godina</li>		
+	  <li>Treca godina</li>		
+	  <li>Cetvrta godina</li>	
+	</ul>
+</body>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Liste sa brojevima<hr>
+	<pre>
+	<xmp>
+<!--
+<body>	
+	<ol>		
+		<li>Prva godina</li>	
+		<li>Druga godina</li>		
+	    <li>Treca godina</li>		
+	    <li>Cetvrta godina</li>	
+	</ol>
+</body>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Divovi<hr>
+	<pre>
+	<xmp>
+<!--
+	Unutar <div> elementa mogu se nalaziti ugniježđeni 
+	skoro svi html elementi.
+<body>	
+	<div>		
+	<p>ovo je prvi div.</p>
+	<div>	
+	<div> ovo je drugi div</div>	
+	<div>ovo je treci div. </div>
+</body>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Farbanje slova u HTML-u<hr>
+	<pre>
+	<xmp>
+<!--
+<h1 style="color:red">Ovo je naslov i on je crven.</h1>
+Da bi se ofarbao tekst ili postavio neki drugi stil neophodno je u
+okviru tog taga pozvati style I definisati sta zelimo,
+ako zelimo da postavimo boju slova onda kucamo color: 
+red – ukucamo boju koju zelimo.
+
+<h3 style="background-color: yellow">ovo je primjer kako 
+ofarbati kompletan prostor.</h3>
+Ako zelimo da ofarbamo prostor gdje se nalazi tekst 
+onda ukucamo background-color I postavimo ime boje.
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Ubacivanje slika<hr>
+	<pre>
+	<xmp>
+<!--
+	Da bi ubacili sliku u html kucate tag <img> 
+	U okviru tog taga pozivate izvor gdje se slika nalazi. 
+	Src je tag za odredjivanje izvora slike. Prilikom navodjenja izvora 
+	slike morate biti precizni sa putanjom.
+	<img src="slika.jpg"></img>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Dimnezije slika<hr>
+	<p>
+	<pre>
+	<xmp>
+<!--
+	<img src="slika.jpg" width="400" height="200" ></img>
+
+	Podešavanje dimenzije slike se vrši u sklopu taga img. 
+	Podesite širinu I visinu na gore navedeni način. 
+-->
+	</xmp>
+	</pre>
+	</p>
+
+</section>
+<section>Pravljenje tabela<hr>
+	<pre>
+	<xmp>
+<!--
+	Natpis tabele koji se pojavljuje iznad ili ispod tabele 
+	definiše se sa <caption>…</caption>
+	Za kreiranje tabela koristite tag <table> </table>
+	Definisanje reda u tabeli <tr>…</tr>
+	Definisanje ćelije u tabeli <td>…</td>
+	Zaglavlje tabele <th>… </th> ista pravila kao za td 
+	samo što se sadršaj prikazuje centrirano i boldovano
+
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Tabele<hr>
+	<pre>
+	<xmp>
+<!--
+	<table style="width:70%">
+  		<caption>NAZIV TABELE</caption>	
+		<tr>				
+        	<th>Ime </th>				
+        	<th>Prezime</th>
+		</tr>	
+		<tr>				
+        	<td>Marko </td>				
+        	<td>Markovic</td>			
+    	</tr>		
+	</table>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Podesavanje tabele<hr>
+	<pre>
+	<xmp>
+<!--
+	<table align="center" border="2" style="width:70%">
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Podesavanje tabele<hr>
+	<pre>
+	<xmp>
+<!--
+	<table align="center" border="2" style="width:70%">
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Dijeljenje celija u tabeli<hr>
+	<pre>
+	<xmp>
+<!--	
+<table> 
+	 <tr>  
+	   <th>Ime</th>    
+	   <th colspan="2"> Telefon</th> 
+	 </tr> 
+	 <tr>    
+		<td>Nikola Pajevic</td> 
+	    <td>123456</td>    
+	    <td>222222</td>
+	 </tr>
+</table>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Dijeljenje celija u tabeli<hr>
+	<p>
+	<pre>
+	<xmp>
+<!--
+<table>
+	<tr>   
+	 <th>First Name:</th>  
+	  <td>Bill Gates</td>
+	  </tr> 
+	 <tr>   
+	 <th rowspan="2">Telephone:</th> 
+	   <td>555 77 854</td>  </tr>  
+	<tr>    
+	<td>555 77 855</td>  </tr>
+</table>
+-->
+	</xmp>
+	</pre>
+</section>
+<section>Meta tagovi<hr>
+	<pre>
+	<xmp>
+<!--
+	<meta charset="UTF-8">  - 
+	za ubacivanje kodne tabele
+	<meta name="author" content="Nikola Pajevic">  - 
+	postavljanje taga za autora sajta
+	<meta name="description" content="Ovo je sajt samo za vjezbu"> - 
+	tag za opis sajta
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	tag za responsive
+-->
+	</xmp>
+	</pre>
+</section>	
+		</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
